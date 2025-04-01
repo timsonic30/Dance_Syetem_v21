@@ -1,0 +1,104 @@
+/* Main Container */
+.LCA-submission-list-container {
+  width: 80%;
+  margin: 30px auto;
+  padding: 16px;
+  background: #ffffff; /* White background for clarity */
+  font-family: sans-serif;
+}
+
+/* Heading */
+.LCA-submission-list-title {
+  text-align: left; /* Corrected capitalization */
+  font-size: 22px;
+  color: #464646; /* Dark gray for heading text */
+  font-weight: bold;
+  margin-bottom: 16px;
+}
+
+/* Loading and Error Messages */
+.LCA-loading-message,
+.LCA-error-message {
+  text-align: center;
+  font-size: 16px;
+  color: #f39c12; /* Highlight color for messages */
+  margin-top: 10px;
+}
+
+/* Table Styling */
+.LCA-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  background-color: #ffffff; /* White table background */
+}
+
+.LCA-table thead th {
+  border-top: 2px solid #ffa500; /* Adds a solid orange border */
+  text-align: left;
+  padding: 12px;
+  color: #b1b0b0; /* Dark gray text in headers */
+  font-size: 14px;
+}
+
+.LCA-table tbody td {
+  padding: 12px;
+  color: #502c2c; /* Dark gray text */
+}
+
+/* Apply specific styles for odd rows */
+.LCA-table tbody tr:nth-child(odd) {
+  background-color: #f3f3f3; /* Light gray for odd rows */
+}
+
+/* Apply specific styles for even rows */
+.LCA-table tbody tr:nth-child(even) {
+  background-color: #ffffff; /* Dark gray for even rows */
+}
+
+/* Hover effect for rows */
+.LCA-table tbody tr:hover {
+  background-color: #ffeabe; /* #ffa500 Slightly darker gray for hover */
+}
+
+/* Links */
+.LCA-table tbody td a {
+  color: #3498db; /* Blue links */
+  text-decoration: none;
+}
+
+.LCA-table tbody td a:hover {
+  text-decoration: underline;
+}
+
+.LCA-transaction-image {
+  max-width: 100px;
+  max-height: 100px;
+  object-fit: cover;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  cursor: pointer; /* Indicate that the image is clickable */
+}
+
+.LCA-table-link {
+  text-decoration: none; /* Remove default link underline */
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .LCA-submission-list-container {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .LCA-table th,
+  .LCA-table td {
+    font-size: 12px;
+    padding: 10px;
+  }
+
+  .LCA-submission-list-title {
+    font-size: 18px;
+  }
+}

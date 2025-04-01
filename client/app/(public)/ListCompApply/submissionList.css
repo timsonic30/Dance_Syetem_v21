@@ -1,0 +1,66 @@
+/* Container for the list */
+.ListComp-submission-list-container {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+/* General styling for the table */
+.ListComp-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  text-align: left;
+}
+
+/* Table header styling */
+.ListComp-table th {
+  background-color: #f4f4f4;
+  color: #333;
+  padding: 10px;
+  border: 1px solid #ddd;
+  text-transform: uppercase;
+}
+
+/* Table row styling */
+.ListComp-table td {
+  padding: 10px;
+  border: 1px solid #ddd;
+}
+
+/* Zebra stripe effect for rows */
+.ListComp-table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.ListComp-table tr:nth-child(odd) {
+  background-color: #fff;
+}
+
+/* Highlight row on hover */
+.ListComp-table tr:hover {
+  background-color: #e9ecef;
+  cursor: pointer;
+}
+
+/* Error message styling */
+.ListComp-error-message {
+  color: red;
+  font-weight: bold;
+}
+
+/* Loading message styling */
+.ListComp-loading-message {
+  color: #333;
+  font-style: italic;
+}
+
+/* Responsive design: table adjusts for smaller screens */
+@media (max-width: 768px) {
+  .ListComp-table {
+    font-size: 12px;
+  }
+  .ListComp-table th,
+  .ListComp-table td {
+    padding: 8px;
+  }
+}
